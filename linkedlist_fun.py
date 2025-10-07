@@ -68,6 +68,12 @@ class LinkedList:
             temp.next = temp.next.next
             del delNode
 
+    # def SearchingIndex(self, idx: int) -> None:
+    #     temp: Node = self.head
+    #     pos: int = 1
+    #     while (temp.next and pos != idx):
+    #         temp = temp.next
+    #     print(f"Data: {temp.data}\tIndex: {idx}")
 
     def Display(self) -> None:
         temp: Node = self.head
@@ -83,4 +89,4 @@ l1.insertTail(10)
 l1.insertTail(20)
 l1.insertTail(30)
 l1.insertTail(40)
-
+l1.SearchingIndex(2)
